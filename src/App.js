@@ -22,11 +22,11 @@ function App() {
   const agregarInput = (val) => {
     if (isNaN(val) && val !== "." && val !== "=") {
       setInput(input + val);
-      setCuenta((prevCuenta) => prevCuenta + 1);
+      setCuenta(cuenta + 1);
     } else {
       setInput(input + val);
       if (cuenta >= 2) {
-        setCuenta((prevCuenta) => prevCuenta - 1);
+        setCuenta(cuenta - 1);
       }
     }
   };
